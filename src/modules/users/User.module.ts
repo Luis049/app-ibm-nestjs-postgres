@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { UserEntity } from './entities/user.entity';
-import { UserController } from './user.controller';
 import { UserCommandsService } from './UserCommands.service';
 import { UserQueriesService } from './UserQueries.service';
 import { UserMapper } from './mappers/user.mapper';
+import { UserController } from './User.controller';
 
 
 @Module({

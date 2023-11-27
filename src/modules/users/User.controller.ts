@@ -80,7 +80,5 @@ export class UserController {
     return this.userCommands.delete(id);
   }
 }
-function trim() {
-    throw new Error('Function not implemented.');
-}
+
 
