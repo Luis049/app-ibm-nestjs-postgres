@@ -9,4 +9,13 @@ export const CONFIG_DATABASE = () =>
     password: process.env.DB_PASSWORD,
     autoLoadEntities: true,
     synchronize: true,
+    ssl: process.env.POSTGRES_SSL === "true",
+    extra: {
+      ssl:
+        process.env.POSTGRES_SSL === "true"
+          ? {
+              rejectUnauthorized: false,
+            }
+          : null,
+    },
   });
